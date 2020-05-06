@@ -1,4 +1,7 @@
 <html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="../style/vod.css" />
+  </head>
   <body>
       <table>
           <thead>
