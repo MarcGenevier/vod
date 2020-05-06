@@ -9,12 +9,12 @@
     foreach($films as $n => $film){
       list($titre, $annee, $realisateur) = explode(":", $film);
 
-      if(trim($titre) == trim($_POST["titre"])){
+      if(strtolower(trim($titre)) == strtolower(trim($_POST["titre"]))){
         echo "Voici les informations pour le film ".$titre."\n Année : ".$annee." Réalisateur : ".$realisateur;
-        trouve = true;
+        $trouve = true;
         break;
       }
-      trouve = false;
+      $trouve = false;
     }
 
     if(!$trouve){
