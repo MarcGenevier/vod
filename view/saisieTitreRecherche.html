@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Supprimer un film</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+    <body>
+        <fieldset>
+            <legend>Renseignez les informations de votre film :</legend>
+            <form action="../controller/rechercherFilm.php" method="POST" name="rechercherFilm" >
+                <label>Titre :</label>
+                <br/>
+				<input required type="text" name="titre" placeholder= "Rechercher un titre :" />
+                <br/>
+                <br/>
+
+                <input type="submit" value="Rechercher" />
+                <br/>
+                <br/>
+                
+                <input type="reset" value="Annuler" />
+            </form>
+        </fieldset>
+    </body>
+</html>
