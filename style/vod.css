@@ -46,3 +46,58 @@ thead {
     background-color: #444444;
     color: #ffffff;
 }
+
+.search_bar {
+    width: 130px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    transition: width 0.4s ease-in-out;
+}
+
+.search_bar:focus{
+    width: 100%
+}
+
+.button {
+    background-color: #e7e7e7;
+    border: 2px solid #555555;
+    border-radius: 4px;
+    color: black;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #e7e7e7;
+}
+
+.delete_button {
+    background-color: #ffffff;
+    color: black;
+    border: 2px solid #f44336;
+    border-radius: 4px;
+}
+
+.delete_button:hover{
+    background-color: #f44336;
+    color: white;
+}
