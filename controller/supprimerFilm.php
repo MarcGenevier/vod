@@ -4,18 +4,20 @@
   
     $path = "../data/vod.csv" ;
     $films = file($path);
-
+	
     foreach($films as $n => $film){
       list($titre, $annee, $realisateur) = explode(":", $film);
-      
-      if($titre == $_POST["titre"]){
-        $films = str_replace($film."/n", "", $films);
-        file_put_contents($path, $films);
+
+      if(trim($titre) == trim($_POST["titre"])){
+	$filmsContent = file_get_contents($path);
+        $filmsContent = str_replace($film, "", $filmsContent);
+        file_put_contents($path, $filmsContent);
+
+	echo "Le film ".$titre." a été supprimé avec succès";
         break;
       }
     }
 
   ?>
-  Le film a été supprimer avec succés 
   </body>
 </html>
