@@ -18,8 +18,31 @@ li a {
     text-align: center;
     padding: 14px, 16px;
     text-decoration: none;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 li a:hover {
     background-color: #222222;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+thead {
+    background-color: #444444;
+    color: #ffffff;
 }
